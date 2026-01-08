@@ -1,0 +1,28 @@
+
+--- Memory Management Simulator ---
+[1. Allocator | 2. Cache | 3. VM | 4. Integrated | 5. Exit]
+Choice: 
+--- Cache Simulator ---
+[Cmds: init <L1> <L2> <blk> <assoc> <pol>, access <addr> <0|1>, stats, dump, back]
+cache> Hierarchy Ready (FIFO).
+cache> READ @ Address 0
+cache> READ @ Address 64
+cache> READ @ Address 128
+cache> READ @ Address 0
+cache> 
+========== Hierarchical Stats ==========
+L1 Cache:
+  Hits:             0
+  Misses:           4
+  Hit Rate:         0.00%
+
+L2 Cache:
+  Hits:             1
+  Misses:           3
+  Local Hit Rate:   25.00%
+
+Performance Metrics:
+  L1 Miss Penalty:  85.00 cycles
+  Avg Access Time:  86.00 cycles
+========================================
+cache> 

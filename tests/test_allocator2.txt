@@ -1,0 +1,12 @@
+1
+init 500
+mode first
+malloc 100
+malloc 100
+malloc 100
+malloc 100
+free 1
+free 3
+stats
+dump
+exit

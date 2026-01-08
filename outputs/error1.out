@@ -1,0 +1,9 @@
+
+--- Memory Management Simulator ---
+[1. Allocator | 2. Cache | 3. VM | 4. Integrated | 5. Exit]
+Choice: 
+--- Integrated Mode (VM + Cache) ---
+[Cmds: init <ram> <pg> <l1> <l2> <blk> <asc>, access <pid> <addr> <0|1>, stats, dump, back]
+integrated> Error: RAM size must be power of 2.
+Error: Page size must be power of 2.
+integrated> 

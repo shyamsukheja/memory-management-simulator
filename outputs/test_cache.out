@@ -1,0 +1,35 @@
+
+--- Memory Management Simulator ---
+[1. Allocator | 2. Cache | 3. VM | 4. Integrated | 5. Exit]
+Choice: 
+--- Cache Simulator ---
+[Cmds: init <L1> <L2> <blk> <assoc> <pol>, access <addr> <0|1>, stats, dump, back]
+cache> Hierarchy Ready (LRU).
+cache> READ @ Address 1024
+cache> READ @ Address 2048
+cache> READ @ Address 1024
+cache> 
+========== Hierarchical Stats ==========
+L1 Cache:
+  Hits:             1
+  Misses:           2
+  Hit Rate:         33.33%
+
+L2 Cache:
+  Hits:             0
+  Misses:           2
+  Local Hit Rate:   0.00%
+
+Performance Metrics:
+  L1 Miss Penalty:  110.00 cycles
+  Avg Access Time:  74.33 cycles
+========================================
+cache> --- L1 Cache ------ Cache Dump ---
+Set: 0 | Tag:2 | PhysAddr:1024
+Set: 0 | Tag:4 | PhysAddr:2048
+------------------
+--- L2 Cache ------ Cache Dump ---
+Set: 0 | Tag:1 | PhysAddr:2048
+Set: 16 | Tag:0 | PhysAddr:1024
+------------------
+cache> 

@@ -1,0 +1,8 @@
+4
+init 16384 4096 1024 4096 64 4
+access 1 0 0
+access 1 4096 0
+access 1 0 1
+stats
+dump
+exit

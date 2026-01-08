@@ -1,0 +1,46 @@
+
+--- Memory Management Simulator ---
+[1. Allocator | 2. Cache | 3. VM | 4. Integrated | 5. Exit]
+Choice: 
+--- Integrated Mode (VM + Cache) ---
+[Cmds: init <ram> <pg> <l1> <l2> <blk> <asc>, access <pid> <addr> <0|1>, stats, dump, back]
+integrated> System ready (LRU Policy).
+integrated> Processed VA 0 (R)
+integrated> Processed VA 4096 (R)
+integrated> Processed VA 0 (W)
+integrated> 
+========== Hierarchical Stats ==========
+L1 Cache:
+  Hits:             1
+  Misses:           2
+  Hit Rate:         33.33%
+
+L2 Cache:
+  Hits:             0
+  Misses:           2
+  Local Hit Rate:   0.00%
+
+Performance Metrics:
+  L1 Miss Penalty:  110.00 cycles
+  Avg Access Time:  74.33 cycles
+========================================
+integrated> 
+[L1 DUMP]
+--- Cache Dump ---
+Set: 0 | Tag:0 | PhysAddr:0 | modified
+Set: 0 | Tag:16 | PhysAddr:4096
+------------------
+
+[L2 DUMP]
+--- Cache Dump ---
+Set: 0 | Tag:0 | PhysAddr:0
+Set: 0 | Tag:4 | PhysAddr:4096
+------------------
+
+[PHYSICAL RAM DUMP]
+--- Physical RAM Status ---
+Frames Used: 2/4
+ Frame 0: PID 1 (VPN 0)
+ Frame 1: PID 1 (VPN 1)
+Hits: 1 | Faults: 2
+integrated> 

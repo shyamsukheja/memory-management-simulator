@@ -1,0 +1,11 @@
+1
+init 1024
+mode best
+malloc 200
+malloc 200
+malloc 200
+free 2
+malloc 50
+stats
+dump
+exit

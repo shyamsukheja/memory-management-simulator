@@ -1,0 +1,5 @@
+4
+init 4096 1024 256 512 32 3
+access 1 9000 0
+status
+exit

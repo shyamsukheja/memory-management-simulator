@@ -1,0 +1,22 @@
+
+--- Memory Management Simulator ---
+[1. Allocator | 2. Cache | 3. VM | 4. Integrated | 5. Exit]
+Choice: 
+--- Allocator Mode ---
+[Cmds: init <size>, mode <first|best|worst>, malloc <size>, free <id>, stats, dump, back]
+allocator> Memory initialized: 500 bytes.
+allocator> Strategy set to: first
+allocator> Allocated block ID: 1
+allocator> Allocated block ID: 2
+allocator> Allocated block ID: 3
+allocator> Allocated block ID: 4
+allocator> Freed ID 1.
+allocator> Freed ID 3.
+allocator> Total: 500 | Used: 200 | Success: 100% | Ext Frag: 66.6667%
+allocator> --- Memory Dump ---
+[0 - 99] Size: 100 (FREE)
+[100 - 199] Size: 100 (ID: 2)
+[200 - 299] Size: 100 (FREE)
+[300 - 399] Size: 100 (ID: 4)
+[400 - 499] Size: 100 (FREE)
+allocator> 

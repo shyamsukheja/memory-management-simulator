@@ -1,0 +1,7 @@
+1
+malloc 100
+init 512
+malloc 1024
+malloc 300
+stats
+exit

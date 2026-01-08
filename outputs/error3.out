@@ -1,0 +1,12 @@
+
+--- Memory Management Simulator ---
+[1. Allocator | 2. Cache | 3. VM | 4. Integrated | 5. Exit]
+Choice: 
+--- Allocator Mode ---
+[Cmds: init <size>, mode <first|best|worst>, malloc <size>, free <id>, stats, dump, back]
+allocator> Error: Run 'init' first.
+allocator> Memory initialized: 512 bytes.
+allocator> Allocation failed (Fragmentation/OOM).
+allocator> Allocated block ID: 1
+allocator> Total: 512 | Used: 300 | Success: 50% | Ext Frag: 0%
+allocator> 

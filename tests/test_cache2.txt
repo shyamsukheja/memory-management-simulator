@@ -1,0 +1,8 @@
+2
+init 128 256 64 1 0
+access 0 0
+access 64 0
+access 128 0
+access 0 0
+stats
+exit

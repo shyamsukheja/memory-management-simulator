@@ -1,0 +1,17 @@
+
+--- Memory Management Simulator ---
+[1. Allocator | 2. Cache | 3. VM | 4. Integrated | 5. Exit]
+Choice: 
+--- Virtual Memory Simulator ---
+[Cmds: init <ram> <pg> <pol>, access <pid> <addr>, status, back]
+vm> Physical RAM ready (LRU).
+vm> PID 1 | VA 0 -> PA 0
+vm> PID 1 | VA 1025 -> PA 1025
+vm> PID 1 | VA 2048 -> PA 2048
+vm> --- Physical RAM Status ---
+Frames Used: 3/4
+ Frame 0: PID 1 (VPN 0)
+ Frame 1: PID 1 (VPN 1)
+ Frame 2: PID 1 (VPN 2)
+Hits: 0 | Faults: 3
+vm> 
